@@ -1,0 +1,61 @@
+/* Utilities */
+:root {
+    --accent-blue:#5794f7;
+    --main-color:white;
+    --secondary-color:#e8e8e8;
+    --tertiary-color:#cccccc;
+}
+
+/* Fonts */
+@font-face {
+    font-family: "Radio Canada M";
+    src:url("fonts/RadioCanada-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Radio Canada R";
+    src:url("fonts/RadioCanada-Regular.ttf") format("truetype");
+}
+
+/* Navbar */
+.nav li a {
+    transition:color 0.5s ease-in-out;
+    transition:box-shadow 0.25s ease-in-out;
+}
+
+.nav li a:hover  {
+    color:var(--accent-blue);
+    box-shadow:var(--secondary-color) 2px 2px;
+}
+
+.nav-active {
+    font-weight:bold;
+    box-shadow:var(--secondary-color) 0px 2px;
+}
+
+.pfp {
+    height:38px;
+    width:38px;
+
+    border-radius:100%;
+}
+
+/* Content */
+.msg-box {
+    border-bottom-right-radius:4px;
+    padding-bottom:2.5px;
+    padding-right:6px;
+
+    font-family:"Radio Canada M";
+    box-shadow:var(--tertiary-color) 3.5px 3.5px;
+}
+
+.msg-box p {
+    font-family:"Radio Canada R";
+    font-size:14px;
+}
+
+.false-link {
+    color:#337ab7;
+    user-select:none;
+}
