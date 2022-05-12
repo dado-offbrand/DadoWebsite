@@ -59,3 +59,12 @@
     color:#337ab7;
     user-select:none;
 }
+
+/* Audio Content */
+audio {
+    background-color:var(--main-color);
+    border-top-right-radius:500px;
+    border-bottom-right-radius:500px;
+    border-bottom-left-radius:500px;
+    box-shadow:var(--tertiary-color) 3.5px 3.5px;
+}
