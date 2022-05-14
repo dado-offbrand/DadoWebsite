@@ -1,6 +1,7 @@
 /* Utilities */
 :root {
     --accent-blue:#5794f7;
+    --accent-white:#ededed;
     --main-color:white;
     --secondary-color:#e8e8e8;
     --tertiary-color:#cccccc;
@@ -15,6 +16,16 @@
 @font-face {
     font-family: "Radio Canada R";
     src:url("fonts/RadioCanada-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "EncodeSans L";
+    src:url("fonts/EncodeSans-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "EncodeSans R";
+    src:url("fonts/EncodeSans-Regular.ttf") format("truetype");
 }
 
 /* Navbar */
@@ -67,4 +78,20 @@ audio {
     border-bottom-right-radius:500px;
     border-bottom-left-radius:500px;
     box-shadow:var(--tertiary-color) 3.5px 3.5px;
+}
+
+/* Codebox Content */
+.code-box {
+    background-color:var(--accent-white);
+    border-left:var(--tertiary-color) 1px solid;
+    box-shadow:var(--tertiary-color) 3.5px 3.5px;
+    
+    font-family:"EncodeSans R";
+    border-radius:5px;
+}
+
+.code-box span {
+    border-right:var(--tertiary-color) 1px solid;
+    padding: 5px 3px 5px 2px;
+    display:inline-block;
 }
