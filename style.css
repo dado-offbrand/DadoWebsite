@@ -94,4 +94,5 @@ audio {
     border-right:var(--tertiary-color) 1px solid;
     padding: 5px 3px 5px 2px;
     display:inline-block;
+    user-select:none;
 }
