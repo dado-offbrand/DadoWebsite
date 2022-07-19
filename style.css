@@ -141,3 +141,8 @@ audio {
 #github-space {
     padding-bottom:23px;
 }
+
+/* Misc */
+.small-break {
+    line-height:10px;
+}
