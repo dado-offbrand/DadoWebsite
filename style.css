@@ -5,6 +5,7 @@
     --main-color:white;
     --secondary-color:#e8e8e8;
     --tertiary-color:#cccccc;
+    --interaction-transition-time:0.25s;
 }
 
 /* Fonts */
@@ -58,7 +59,7 @@
     border-radius:100%;
 }
 
-/* Content */
+/* Message Box Content */
 .msg-box {
     border-bottom-right-radius:4px;
     padding-bottom:2.5px;
@@ -73,17 +74,32 @@
     font-size:14px;
 }
 
-.false-link {
-    color:#337ab7;
-    user-select:none;
+/* Interactable Box Content */
+
+.interactable-box {
+    border-bottom-right-radius:4px;
+    padding-bottom:2.5px;
+    padding-right:6px;
+
+    font-family:"Radio Canada M";
+    box-shadow:var(--tertiary-color) 3.5px 3.5px;
+    transition:var(--interaction-transition-time) box-shadow ease-out;
 }
 
-.center {
-    margin-left:auto !important;
-    margin-right:auto !important;
+.interactable-box-translater {
+    transform:translate(-3.5px, -3.5px);
+}
+
+.interactable-box:hover {
+    box-shadow:var(--tertiary-color) 3.5px 3.5px, inset var(--tertiary-color) -3.5px -3.5px;
+}
+
+.interactable-box img, .interactable-box h3, .interactable-box p {
+    transition:var(--interaction-transition-time) transform ease-out;
 }
 
 /* Audio Content */
+
 audio {
     background-color:var(--main-color);
     border-top-right-radius:500px;
@@ -93,6 +109,7 @@ audio {
 }
 
 /* Codebox Content */
+
 .code-box {
     background-color:var(--accent-white);
     border-left:var(--tertiary-color) 1px solid;
@@ -143,6 +160,13 @@ audio {
 }
 
 /* Misc */
-.small-break {
-    line-height:10px;
+
+.false-link {
+    color:#337ab7;
+    user-select:none;
+}
+
+.center {
+    margin-left:auto !important;
+    margin-right:auto !important;
 }
