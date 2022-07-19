@@ -30,12 +30,13 @@
 
 /* Navbar */
 .nav li a {
-    transition:color 0.5s ease-in-out;
+    transition:color 0.5s ease-in-out, background-color 0.5s ease-in-out;
     transition:box-shadow 0.25s ease-in-out;
 }
 
 .nav li a:hover  {
     color:var(--accent-blue);
+    background-color:var(--accent-white);
     box-shadow:var(--secondary-color) 2px 2px;
 }
 
@@ -71,6 +72,11 @@
     user-select:none;
 }
 
+.center {
+    margin-left:auto !important;
+    margin-right:auto !important;
+}
+
 /* Audio Content */
 audio {
     background-color:var(--main-color);
@@ -96,4 +102,36 @@ audio {
     padding: 5px 3px 5px 2px;
     display:inline-block;
     user-select:none;
+}
+
+/* Media Content */
+
+.banner {
+    background-color:#eeeeee;
+    width:100%;
+    height:auto;
+}
+
+.media-image {
+    width:36px;
+    height:36px;
+    float:right;
+    padding:3px;
+}
+
+.media-title {
+    font-size:30px;
+    font-family:"Radio Canada R";
+}
+
+.media-content {
+    padding:6px 4px 4px 4px;
+}
+
+#spotify-space {
+    padding-bottom:24px;
+}
+
+#github-space {
+    padding-bottom:23px;
 }
