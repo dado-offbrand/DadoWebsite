@@ -6,6 +6,7 @@
     <title>About Dado</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" href="images/ProfileIcon.png">
+    <script src="scripts/interactablebox.js"></script>
 
     <!-- Website Misc -->
     <meta charset="utf-8">
@@ -77,7 +78,7 @@
         <!-- Third Row -->
         <div class="row">
             <div class="col-sm-4">
-                <div class="msg-box">
+                <div class="interactable-box" onmouseover="move_children(this);" onmouseleave="unmove_children(this);">
                     <img src="images/InstaLogo.png" class="media-image">
                     <h3 class="media-title">Instagram</h3>
                     <br>
@@ -93,7 +94,7 @@
             </div>
 
             <div class="col-sm-4">
-                <div class="msg-box">
+                <div class="interactable-box" onmouseover="move_children(this);" onmouseleave="unmove_children(this);">
                     <img src="images/SpotifyLogo.png" class="media-image">
                     <h3 class="media-title">Spotify</h3>
                     <br>
@@ -107,7 +108,7 @@
             </div>
 
             <div class="col-sm-4">
-                <div class="msg-box">
+                <div class="interactable-box" onmouseover="move_children(this);" onmouseleave="unmove_children(this);">
                     <img src="images/GithubLogo.png" class="media-image">
                     <h3 class="media-title">Github</h3>
                     <br>
