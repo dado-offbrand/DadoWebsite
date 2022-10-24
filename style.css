@@ -41,7 +41,7 @@
     transition:box-shadow 0.25s ease-in-out;
 }
 
-.nav li a:hover  {
+.nav li a:hover, .pfp:hover  {
     color:var(--accent-blue);
     background-color:var(--accent-white);
     box-shadow:var(--secondary-color) 2px 2px;
@@ -188,14 +188,104 @@ audio {
     padding-bottom:23px;
 }
 
-/* Misc */
+/* Gradient */
+
+.gradient-text {
+    padding-bottom:6px;
+    text-align:center;
+    top:50%;
+
+    color:#e8e8e8;
+    font-family:Courier;
+    font-weight:lighter;
+    
+    letter-spacing:6px;
+    font-size:30px;
+}
+
+.gradient-img {
+    padding-top:10px;
+    width:56px;
+    
+    animation: rotateB 0.5s ease;
+    filter: invert(100%);
+    color:white;
+}
+
+.gradient-div {
+    z-index:-1;
+    position:absolute;
+    left:0px;
+    top:0px;
+    
+    background-size:400%;
+    height:120%;
+    width:100%;
+    background-image: linear-gradient(-45deg, #D16BA5, #86A8E7, #F897DE);
+    animation: switch 15s ease infinite;
+}
+
+#hidden {
+    visibility:hidden;
+    width:100%;
+    height:100%;
+}
+
+.gradient-img:hover {
+    animation: rotate 0.5s ease;
+    transform:rotateZ(45deg);
+}
+
+@keyframes rotateB {
+    0% {
+        transform:rotateZ(45deg);    
+    }
+    
+    100% {
+        transform:rotateZ(0deg);    
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform:rotateZ(0deg);    
+    }
+    
+    100% {
+        transform:rotateZ(45deg);    
+    }
+}
+
+@keyframes switch {
+    0% {
+        background-position: 0% 50%;
+    }
+    
+    50% {
+        background-position: 100% 0%;
+    }
+    
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Misc Content */
 
 .false-link {
     color:#337ab7;
     user-select:none;
 }
 
+.round-link {
+    border-radius:100% !important;
+}
+
 .center {
     margin-left:auto !important;
     margin-right:auto !important;
+}
+
+#no-hov {
+    box-shadow:0px 0px !important;
 }
