@@ -1,0 +1,14 @@
+<!-- Seventh Row -->
+<div class="row">
+    <div class="col-sm-12">
+        <h3>Title</h3>
+        <p>
+            Maintext
+        </p>
+        <br>
+
+        <p>
+            Subtext
+        </p>
+    </div>
+</div>
