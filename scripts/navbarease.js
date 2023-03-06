@@ -1,8 +1,8 @@
-let names = ["Home", "Portfolio", "Current Project", "Playground"];
+let names = [ /*n1*/ "Home", /*n2*/ "Portfolio", /*n3*/ "Current Project", /*n4*/ "Playground"];
 
 function configNav() {
     for (let i = 1; i <= 4; i++) 
     {
-        document.getElementsByClassName('n'+i)[0].textContent = names[i-1];
+        document.getElementById('n'+i).textContent = names[i-1];
     }
 }
